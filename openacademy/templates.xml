@@ -1,22 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <openerp>
     <data>
-        <!-- <template id="listing"> -->
-        <!--   <ul> -->
-        <!--     <li t-foreach="objects" t-as="object"> -->
-        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
-        <!--         <t t-esc="object.display_name"/> -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!-- </template> -->
-        <!-- <template id="object"> -->
-        <!--   <h1><t t-esc="object.display_name"/></h1> -->
-        <!--   <dl> -->
-        <!--     <t t-foreach="object._fields" t-as="field"> -->
-        <!--       <dt><t t-esc="field"/></dt> -->
-        <!--       <dd><t t-esc="object[field]"/></dd> -->
-        <!--     </t> -->
-        <!--   </dl> -->
-        <!-- </template> -->
+        <!-- <record model="ir.actions.act_window" id="action_list_ideas">
+            <field name="name">Ideas</field>
+            <field name="res_model">idea.idea</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_ideas" parent="menu_root" name="Ideas" sequence="10" action="action_list_ideas"></menuitem> -->
     </data>
 </openerp>
