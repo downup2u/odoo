@@ -3,8 +3,8 @@
     <data>
         <!--会员卡列表界面 -->
         <record model="ir.ui.view" id="card_list_view">
-            <field name="name">cashcard.memberCard.list</field>
-            <field name="model">cashcard.memberCard</field>
+            <field name="name">cashcard.membercard.list</field>
+            <field name="model">cashcard.membercard</field>
             <field name="arch" type="xml">
                 <tree string="memberCard list">
                     <field name="card_number"></field>
@@ -15,8 +15,8 @@
             </field>
         </record>
         <record id="card_form_view" model="ir.ui.view">
-            <field name="name">cashcard.memberCard.form</field>
-            <field name="model">cashcard.memberCard</field>
+            <field name="name">cashcard.membercard.form</field>
+            <field name="model">cashcard.membercard</field>
             <field name="arch" type="xml">
                 <form string="memberCard list">
                     <sheet>
@@ -32,8 +32,8 @@
         </record>
         <!--消费记录界面 -->
         <record model="ir.ui.view" id="reducerecord_list_view">
-            <field name="name">cashcard.cardReduceRecord.list</field>
-            <field name="model">cashcard.cardReduceRecord</field>
+            <field name="name">cashcard.cardreducerecord.list</field>
+            <field name="model">cashcard.cardreducerecord</field>
             <field name="arch" type="xml">
                 <tree string="cardReduceRecord list">
                     <field name="reduce_time"></field>
@@ -44,8 +44,8 @@
             </field>
         </record>
 		<record id="reducerecord_form_view" model="ir.ui.view">
-            <field name="name">cashcard.cardReduceRecord.form</field>
-            <field name="model">cashcard.cardReduceRecord</field>
+            <field name="name">cashcard.cardreducerecord.form</field>
+            <field name="model">cashcard.cardreducerecord</field>
             <field name="arch" type="xml">
                 <form string="cardReduceRecord list">
                     <sheet>
@@ -61,16 +61,16 @@
         </record>
         <!-- 点击菜单：会员卡系统->会员卡->会员卡维护 -->
         <record model="ir.actions.act_window" id="card_maintenance_list_action">
-            <field name="name">memberCard</field>
-            <field name="res_model">cashcard.memberCard</field>
+            <field name="name">membercard</field>
+            <field name="res_model">cashcard.membercard</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>
 
         <!-- 点击菜单：会员卡系统->会员卡->消费记录 -->
         <record model="ir.actions.act_window" id="card_reducerecord_list_action">
-            <field name="name">cardReduceRecord</field>
-            <field name="res_model">cashcard.cardReduceRecord</field>
+            <field name="name">cardreducerecord</field>
+            <field name="res_model">cashcard.cardreducerecord</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
         </record>

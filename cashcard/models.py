@@ -12,7 +12,7 @@ class memberCard(models.Model):
 
 
 class cardReduceRecord(models.Model):
-    _name = 'cashcard.cardReduceRecord'
+    _name = 'cashcard.cardreducerecord'
     reduce_time = fields.Date(default=fields.Date.today)
     card_number = fields.Char()
     left_value = fields.Float()
