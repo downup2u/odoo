@@ -2,8 +2,8 @@
 
 from openerp import models, fields, api
 
- class memberCard(models.Model):
-    _name = 'cashcard.memberCard'
+class memberCard(models.Model):
+    _name = 'cashcard.membercard'
     card_number = fields.Char()
     open_time = fields.Date(default=fields.Date.today)
     left_value = fields.Float()
@@ -11,7 +11,7 @@ from openerp import models, fields, api
 
 
 
- class cardReduceRecord(models.Model):
+class cardReduceRecord(models.Model):
     _name = 'cashcard.cardReduceRecord'
     reduce_time = fields.Date(default=fields.Date.today)
     card_number = fields.Char()

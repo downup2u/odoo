@@ -3,21 +3,20 @@
     'name': "cashcard",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        cash card""",
 
     'description': """
         Long description of module's purpose
     """,
 
-    'author': "Your Company",
-    'website': "http://www.yourcompany.com",
+    'author': "wangxiaoqing",
+    'website': "http://www.xiaoke.info",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '0.2',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
