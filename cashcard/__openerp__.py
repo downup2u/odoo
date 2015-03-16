@@ -26,7 +26,8 @@
     'data': [
         # 'security/ir.model.access.csv',
         'templates.xml',
-    ],
+        'views/cashcard.xml',
+     ],
     # only loaded in demonstration mode
     'demo': [
         'demo.xml',

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--会员卡列表界面 -->
+        <record model="ir.ui.view" id="card_list_view">
+            <field name="name">cashcard.memberCard.list</field>
+            <field name="model">cashcard.memberCard</field>
+            <field name="arch" type="xml">
+                <tree string="memberCard list">
+                    <field name="card_number"></field>
+                    <field name="open_time"></field>
+                    <field name="left_value"></field>
+                    <field name="card_password"></field>
+                </tree>
+            </field>
+        </record>
+        <!--消费记录界面 -->
+        <record model="ir.ui.view" id="reducerecord_list_view">
+            <field name="name">cashcard.cardReduceRecord.list</field>
+            <field name="model">cashcard.cardReduceRecord</field>
+            <field name="arch" type="xml">
+                <tree string="cardReduceRecord list">
+                    <field name="reduce_time"></field>
+                    <field name="card_number"></field>
+                    <field name="left_value"></field>
+                    <field name="reduce_value"></field>
+                </tree>
+            </field>
+        </record>
+        <!-- 点击菜单：会员卡系统->会员卡->会员卡维护 -->
+        <record model="ir.actions.act_window" id="card_maintenance_list_action">
+            <field name="name">memberCard</field>
+            <field name="res_model">cashcard.memberCard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <!-- 点击菜单：会员卡系统->会员卡->消费记录 -->
+        <record model="ir.actions.act_window" id="card_reducerecord_list_action">
+            <field name="name">cardReduceRecord</field>
+            <field name="res_model">cashcard.cardReduceRecord</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+        <!-- 顶层按钮(会员卡系统) -->
+        <menuitem id="main_cashcard_menu" name="CashCard"></menuitem>
+        <!-- 左菜单（一级），会员卡 -->
+        <menuitem id="cashcard_menu" name="CashCard" parent="main_cashcard_menu"></menuitem>
+        <!--左菜单(二级) 会员卡维护 -->
+        <menuitem id="maintenance_menu" name="Card Maintenance" parent="cashcard_menu" action="card_maintenance_list_action"/>
+        <!--左菜单(二级) 会员卡开卡 -->
+        <menuitem id="open_menu" name="Card Open" parent="cashcard_menu" action="card_open_list_action"/>
+        <!--左菜单(二级) 消费记录 -->
+        <menuitem id="reduce_menu" name="Card Reduce Record" parent="cashcard_menu" action="card_reducerecord_list_action"/>
+
+     </data>
+</openerp>
