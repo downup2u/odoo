@@ -80,8 +80,7 @@
         <menuitem id="cashcard_menu" name="CashCard" parent="main_cashcard_menu"></menuitem>
         <!--左菜单(二级) 会员卡维护 -->
         <menuitem id="maintenance_menu" name="Card Maintenance" parent="cashcard_menu" action="card_maintenance_list_action"/>
-        <!--左菜单(二级) 会员卡开卡 -->
-        <menuitem id="open_menu" name="Card Open" parent="cashcard_menu" action="card_open_list_action"/>
+
         <!--左菜单(二级) 消费记录 -->
         <menuitem id="reduce_menu" name="Card Reduce Record" parent="cashcard_menu" action="card_reducerecord_list_action"/>
 
