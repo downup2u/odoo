@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from datetime import timedelta
-from openerp import models, fields, api, exceptions, _
+from openerp import models, fields, api
 
  class memberCard(models.Model):
     _name = 'cashcard.memberCard'
