@@ -1,0 +1,117 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cashcard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150217\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-03-20 11:41+0000\n"
+"PO-Revision-Date: 2015-03-20 11:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cashcard
+#: model:ir.ui.menu,name:cashcard.maintenance_menu
+msgid "Card Maintenance"
+msgstr "维护会员卡"
+
+#. module: cashcard
+#: model:ir.ui.menu,name:cashcard.reduce_menu
+msgid "Card Reduce Record"
+msgstr "会员卡消费记录"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,card_number:0
+#: field:cashcard.membercard,card_number:0
+msgid "Card number"
+msgstr "卡号"
+
+#. module: cashcard
+#: field:cashcard.membercard,card_password:0
+msgid "Card password"
+msgstr "卡号密码"
+
+#. module: cashcard
+#: model:ir.ui.menu,name:cashcard.cashcard_menu
+#: model:ir.ui.menu,name:cashcard.main_cashcard_menu
+msgid "CashCard"
+msgstr "会员卡"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,create_uid:0
+#: field:cashcard.membercard,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,create_date:0
+#: field:cashcard.membercard,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,id:0
+#: field:cashcard.membercard,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,write_uid:0
+#: field:cashcard.membercard,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,write_date:0
+#: field:cashcard.membercard,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,left_value:0
+#: field:cashcard.membercard,left_value:0
+msgid "Left value"
+msgstr "剩余金额"
+
+#. module: cashcard
+#: field:cashcard.membercard,open_time:0
+msgid "Open time"
+msgstr "开卡时间"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,reduce_time:0
+msgid "Reduce time"
+msgstr "消费时间"
+
+#. module: cashcard
+#: field:cashcard.cardreducerecord,reduce_value:0
+msgid "Reduce value"
+msgstr "消费金额"
+
+#. module: cashcard
+#: view:cashcard.cardreducerecord:cashcard.reducerecord_form_view
+#: view:cashcard.cardreducerecord:cashcard.reducerecord_list_view
+msgid "cardReduceRecord list"
+msgstr "消费记录列表"
+
+#. module: cashcard
+#: model:ir.actions.act_window,name:cashcard.card_reducerecord_list_action
+msgid "cardreducerecord"
+msgstr "消费记录"
+
+#. module: cashcard
+#: view:cashcard.membercard:cashcard.card_form_view
+#: view:cashcard.membercard:cashcard.card_list_view
+msgid "memberCard list"
+msgstr "会员卡列表"
+
+#. module: cashcard
+#: model:ir.actions.act_window,name:cashcard.card_maintenance_list_action
+msgid "membercard"
+msgstr "会员卡"
+
