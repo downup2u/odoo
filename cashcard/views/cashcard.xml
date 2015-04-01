@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openerp>
+
     <data>
         <!--会员卡列表界面 -->
         <record model="ir.ui.view" id="card_list_view">
